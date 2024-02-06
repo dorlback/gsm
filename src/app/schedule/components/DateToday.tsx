@@ -4,15 +4,15 @@ export default function DateToday() {
         weekday: 'short',
         month: 'long',
         day: 'numeric',
-      });
+    });
 
     return (
         <>
             <div className="w-full flex-1 flex items-center justify-center space-x-4">
-                <p className="text-xs text-slate-400">{formattedDate}</p>
-                <p className="text-sm font-semibold text-slate-400">{getPreviousDate(today)}</p>
+                <p className="text-xs text-slate-400">{getPreviousDate(today)}</p>
+                <p className="text-sm font-semibold text-slate-600">{formattedDate}</p>
                 <p className="text-xs text-slate-400">{getNextDate(today)}</p>
-            </div>    
+            </div>
         </>
     )
 }

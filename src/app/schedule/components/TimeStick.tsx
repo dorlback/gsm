@@ -12,14 +12,14 @@ export default function TimeStick() {
 
     return (
         <>
-            <div className="w-full pt-16">
+            <div className="z-50 sticky left-0 bg-white px-2 w-14">
                 {TimeList.map((time, index) => (
                     <>
-                        <div key={index} className="my-2 w-full h-28 flex flex-col items-center">
+                        <div key={index} className="w-full h-28 flex flex-col items-center">
                             <p className="flex-center text-slate-700">{time.time}</p>
                             <p className="flex-center text-slate-700 text-sm font-bold">{time.dayPeriod}</p>
                             <div className="my-2 w-1 flex-1 bg-slate-400" />
-                        </div>  
+                        </div>
                     </>
                 ))}
             </div>

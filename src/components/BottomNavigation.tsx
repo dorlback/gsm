@@ -4,6 +4,7 @@ import tw from 'tailwind-styled-components'
 import { BroomIcon, CalendarIcon, CheckIcon, HomeIcon, UserGroupIcon, UserIcon } from '@/icons/Icons'
 
 const BottomNavigationContainer = tw.div`
+    z-50
     fixed flex bottom-0 left-0 right-0
     w-full h-14
     border-t

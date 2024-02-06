@@ -13,7 +13,7 @@ interface IUserInformation {
 }
 
 const OffCanvasContainer = tw.div`
-    fixed top-0 right-0 z-50 
+    fixed top-0 right-0 z-[99]
     w-screen h-full 
     bg-slate-200 
     transform transition-transform duration-500 ease-in-out

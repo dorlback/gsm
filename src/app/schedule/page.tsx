@@ -8,7 +8,7 @@ const ScheduleContainer = tw.div`
     flex flex-col w-full h-full px-4 
 `
 
-const ScheduleSelectContainer =  tw.div`
+const ScheduleSelectContainer = tw.div`
     relative flex w-full border border-slate-500 rounded-md overflow-hidden
 `
 
@@ -44,13 +44,13 @@ export default function SchedulePage() {
 
             <ScheduleGraphContainer>
                 {scheduleState === ScheduleState.Today ? (
-                    <DailySchedule/>
+                    <DailySchedule />
                 ) : (
-                    <WeeklySchedule/>
+                    <WeeklySchedule />
                 )}
             </ScheduleGraphContainer>
 
-            
+
         </ScheduleContainer>
     )
 }
